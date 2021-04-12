@@ -35,8 +35,26 @@ nav a {
 
 main {
     margin: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
     font-size: 200%;
+}
+
+section {
+    display: flex;
+}
+
+.label {
+    font-weight: bold;
+    margin: 1%;
+    width: 15%;
+}
+
+.content {
+    border-left: cornflowerblue;
+    border-left-style: solid;
+    margin: 0.5%;
 }
