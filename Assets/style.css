@@ -70,6 +70,11 @@ section {
     border: 5px solid aquamarine;
 }
 
+.card-main {
+    flex: 0 0 100%;
+}
+
+
 /* @media screen and (min-width: 768px) {
     main {
         flex-direction: row;
