@@ -7,6 +7,7 @@
 html {
     height: 100%;
     background-color: rgb(255, 255, 255);
+    min-width: 480px;
 }
 
 body {
@@ -37,7 +38,7 @@ nav a {
     padding: 5px;
 }
 
-.background {
+.banner {
     overflow: hidden;
     flex: 0 0 200px;
 }
@@ -49,8 +50,12 @@ main {
 }
 
 .title {
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    left: 20px;
     font-size: 200%;
-    width: 100%;
+    color: lightyellow;
 }
 
 section {
@@ -75,12 +80,15 @@ section {
 }
 
 .card {
-    
     margin: 5px;
     flex: 0 0 calc(50% - 10px);
-    height: 100px;
+    height: 200px;
     border: 5px solid aquamarine;
     overflow: hidden;
+}
+
+.card img {
+    width: 100%;
 }
 
 .card-main {
@@ -89,6 +97,11 @@ section {
 
 video {
     width: 100%;
+}
+
+.contactStyle {
+    display: flex;
+    justify-content: space-around;
 }
 
 /* @media screen and (min-width: 768px) {
