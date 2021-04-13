@@ -1,11 +1,12 @@
 * {
     box-sizing: border-box;
-    border-style: solid;
-    border-color: red;
+    /* border-style: solid; */
+    /* border-color: red; */
 }
 
 html {
     height: 100%;
+    background-color: rgb(255, 255, 255);
 }
 
 body {
@@ -24,6 +25,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
 }
 
 nav a {
@@ -31,6 +35,11 @@ nav a {
     border-color: cornflowerblue;
     border-radius: 1px;
     padding: 5px;
+}
+
+.background {
+    overflow: hidden;
+    flex: 0 0 200px;
 }
 
 main {
@@ -62,18 +71,25 @@ section {
     border-left-style: solid;
     margin: 1%;
     padding: 1%;
+    width: calc(85% - 1%);
 }
 
 .card {
-    flex: 0 0 50%;
+    
+    margin: 5px;
+    flex: 0 0 calc(50% - 10px);
     height: 100px;
     border: 5px solid aquamarine;
+    overflow: hidden;
 }
 
 .card-main {
-    flex: 0 0 100%;
+    flex: 0 0 calc(100% - 10px);
 }
 
+video {
+    width: 100%;
+}
 
 /* @media screen and (min-width: 768px) {
     main {
